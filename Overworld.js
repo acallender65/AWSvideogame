@@ -37,10 +37,6 @@ export class Overworld {
     init() {
       this.map = new OverworldMap(window.OverworldMaps.Library);
       this.startGameLoop();
-
-      console.log("hi")
-
-
     }
    
    }

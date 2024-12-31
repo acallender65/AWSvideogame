@@ -1,4 +1,5 @@
-import { Sprite } from './Sprite.js';
+import { Sprite } from './Sprite.js'
+import hi from "/images/characters/ActualCharacter.png"
 
 export class GameObject {
     constructor(config) {
@@ -6,7 +7,7 @@ export class GameObject {
         this.y = config.y || 0;
         this.sprite = new Sprite({
             gameObject: this,
-            src: config.src || "/images/characters/ActualCharacter.png",
+            src: config.src || hi,
 
         });
     }

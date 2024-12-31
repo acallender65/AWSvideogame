@@ -1,3 +1,5 @@
+import shadowImg from '/images/characters/shadow.png'
+
 export class Sprite {
     constructor(config) {
         //Set up the image
@@ -11,7 +13,7 @@ export class Sprite {
         this.shadow = new Image();
         this.useShadow = true; // config.useShadow || false
         if (this.useShadow) {
-            this.shadow.src = "/images/characters/shadow.png"
+            this.shadow.src = shadowImg
         }
         this.shadow.onload = () => {
             this.isShadowLoaded = true;

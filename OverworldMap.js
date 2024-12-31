@@ -1,4 +1,8 @@
-import { GameObject } from "./GameObject.js";
+import { GameObject } from "./GameObject.js"
+import map from "/images/maps/backgrounds-4.png.png"
+import transparent from "/images/maps/transparent.png"
+import filler from "/images/characters/filler.png"
+
 
 export class OverworldMap {
     constructor(config) {
@@ -24,8 +28,8 @@ export class OverworldMap {
 
 window.OverworldMaps = {
     Library: {
-        lowerSrc: "/images/maps/backgrounds-4.png.png",
-        upperSrc: "/images/maps/transparent.png",
+        lowerSrc: map,
+        upperSrc: transparent,
         gameObjects: {
             mc: new GameObject({
                 x: 50, 
@@ -34,7 +38,7 @@ window.OverworldMaps = {
             npc: new GameObject({
                 x: 50, 
                 y: 200,
-                src: "/images/characters/filler.png"
+                src: filler
             })
         }
     }
