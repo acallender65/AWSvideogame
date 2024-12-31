@@ -1,4 +1,6 @@
-class Overworld {
+import { OverworldMap } from './OverworldMap.js'
+
+export class Overworld {
     constructor(config) {
       this.element = config.element;
       this.canvas = this.element.querySelector(".game-canvas");
@@ -35,6 +37,8 @@ class Overworld {
     init() {
       this.map = new OverworldMap(window.OverworldMaps.Library);
       this.startGameLoop();
+
+      console.log("hi")
 
 
     }

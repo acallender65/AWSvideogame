@@ -1,4 +1,6 @@
-class OverworldMap {
+import { GameObject } from "./GameObject.js";
+
+export class OverworldMap {
     constructor(config) {
         this.gameObjects = config.gameObjects;
 
@@ -25,11 +27,11 @@ window.OverworldMaps = {
         lowerSrc: "/images/maps/backgrounds-4.png.png",
         upperSrc: "/images/maps/transparent.png",
         gameObjects: {
-            mc : new GameObject({
+            mc: new GameObject({
                 x: 50, 
                 y: 150
             }),
-            npc : new GameObject({
+            npc: new GameObject({
                 x: 50, 
                 y: 200,
                 src: "/images/characters/filler.png"
