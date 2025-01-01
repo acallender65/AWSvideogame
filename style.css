@@ -24,3 +24,63 @@ html, body {
     .game-container canvas {
       image-rendering: pixelated;
     }
+
+    #mg{
+      width: 1500px;
+      height: 700px;
+      background-color: aliceblue;
+      position: relative;
+      display: block;
+      margin: auto;
+      top: 20px;
+     }
+
+   #mc {
+    position: relative;
+    top: 530px;
+    left: 500px;
+   }
+
+   .animate{
+    animation: mcjump 500ms infinite;
+   }
+
+   @keyframes mcjump{
+    0%{top: 530px;} 
+    30%{top: 300px;}
+    70%{top: 300px;}
+    100%{top: 530px;}
+   }
+
+   #vill {
+    position: relative;
+    top: 430px;
+    left: 1410px;
+    animation: vill 2s infinite linear;
+   }
+
+   @keyframes vill{
+    0%{left: 1410px;}
+    100%{left: -40px;}
+   }
+
+   #follower{
+    position: relative;
+    top: 45px;
+   }
+
+   .animate2{
+    animation: fjump 500ms infinite;
+   }
+   
+   @keyframes fjump{
+    0%{top: 145px;} 
+    30%{top: -300px;}
+    70%{top: -300px;}
+    100%{top: 145px;}
+   }
+  
+
+
+
+  
